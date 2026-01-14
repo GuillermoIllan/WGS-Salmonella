@@ -3,7 +3,7 @@ This report presents the results of the phylogenetic analysis conducted on presu
 
 # Material and Methods
 
-Raw sequencing reads were trimmed and filtered using **Fastp v0.24.3** [@chen2018], followed by quality assessment with **FastQC v0.12**. High-quality reads were then assembled using the pipeline implemented in **Shovill v1.1.0** (<https://github.com/tseemann/shovill>), a method previously applied in *Salmonella* spp. genomic studies.
+Raw sequencing reads were trimmed and filtered using **Fastp v0.24.3**, followed by quality assessment with **FastQC v0.12**. High-quality reads were then assembled using the pipeline implemented in **Shovill v1.1.0** (<https://github.com/tseemann/shovill>), a method previously applied in *Salmonella* spp. genomic studies.
 
 To identify potential contamination, **Kraken2** was used to detect contigs originating from non-target organisms. Draft genome assemblies were evaluated for quality using **QUAST v5.3.0** and **CheckM2**.
 

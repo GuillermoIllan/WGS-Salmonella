@@ -1,0 +1,2 @@
+antigenic_formula	cgmlst_ST	cgmlst_distance	cgmlst_found_loci	cgmlst_genome_match	cgmlst_matching_alleles	cgmlst_subspecies	fasta_filepath	genome	h1	h2	o_antigen	qc_messages	qc_status	serogroup	serovar	serovar_antigen	serovar_cgmlst
+41:z10:1,2	3477149013	0.06666666666666665	330	SRR5040786	308	salamae	/home/lab-micro-10/WGS_salmonella/assemblies/shovill/assemblies/PBH2.fa	PBH2	z10	1,2	41	INFO: Number of cgMLST330 loci found (n=330)	PASS	S	II 41:z10:1,2	II 41:z10:1,2	II 41:z10:1,2

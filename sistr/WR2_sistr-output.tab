@@ -1,0 +1,2 @@
+antigenic_formula	cgmlst_ST	cgmlst_distance	cgmlst_found_loci	cgmlst_genome_match	cgmlst_matching_alleles	cgmlst_subspecies	fasta_filepath	genome	h1	h2	o_antigen	qc_messages	qc_status	serogroup	serovar	serovar_antigen	serovar_cgmlst
+6,7,14:y:e,n,z15	3546561589	0.033333333333333326	330	ERR406393	319	enterica	/home/lab-micro-10/WGS_salmonella/assemblies/shovill/assemblies/WR2.fa	WR2	y	e,n,z15	6,7,14	INFO: Number of cgMLST330 loci found (n=330)	PASS	C1	Mikawasima	Hartford|Mikawasima|Herzliya	Mikawasima

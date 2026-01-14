@@ -1,0 +1,45 @@
+fasta_list: /home/lab-micro-10/WGS_salmonella/kSNP4/Salmonella.in
+Output directory: /home/lab-micro-10/WGS_salmonella/kSNP4/CoreTree
+Starting kSNP4.1
+mié 02 jul 2025 10:27:24 CEST
+Configuration for this run:
+input fasta_list: /home/lab-micro-10/WGS_salmonella/kSNP4/Salmonella.in
+output / working directory: /home/lab-micro-10/WGS_salmonella/kSNP4/CoreTree
+k=17
+annotate_list file: 
+Maximum number of open files: 10240
+Automatically determining number of CPUs to use:
+The operating system is Linux
+Discovered 28
+Number CPUs: 28
+Python version to be used:
+Python 3.12.8
+SNPS_ALL_INPUT=
+GENBANKFILEINPUT=
+CORE=1
+ML=0
+NJ=0
+VCF=0
+DEBUG=0
+[00:00:00] (1/10) Preprocessing
+[00:00:00] (2/10) Running jellyfish to get kmer counts
+[00:00:11] (3/10) Partitioning kmer counts for parallelization
+[00:00:13] (4/10) Finding SNPs (1/4) Generating SNPs within partitions
+[00:00:16] (4/10) Finding SNPs (2/4) Combining partitions into FASTA files for mummer
+[00:00:16] (4/10) Finding SNPs (3/4) Combining partitions into complete list of SNPs found
+[00:00:16] (4/10) Finding SNPs (4/4) Done finding SNPs
+[00:00:17] (5/10) Running mummer to find SNP positions for annotation (0/0) Starting
+[00:00:17] (5/10) Running mummer to find SNP positions for annotation (0/0) Done
+[00:00:17] (6/10) Processing SNPs data (1/4) Adding position data to all_SNPs
+[00:00:17] (6/10) Processing SNPs data (2/4) Sorting SNPs
+[00:00:18] (6/10) Processing SNPs data (3/4) Number and label SNPs
+[00:00:19] (6/10) Processing SNPs data (4/4) Creating VCF file.
+[00:00:19] (7/10) Generating phylogenic trees (0/2) Setup
+[00:00:19] (7/10) Generating phylogenic trees (1/2) parsimony
+[00:00:38] (7/10) Generating phylogenic trees (2/2) Generating unresolved clusters
+[00:00:38] (7/10) Generating phylogenic trees (2/2) Done
+[00:00:38] (8/10) Getting annotation data from NCBI (0/0) Starting
+[00:00:38] (10/10) Cleanup (0/1) Starting
+[00:00:38] (10/10) Cleanup (1/1) Done
+
+Time used: 00:00:39

@@ -1,0 +1,34 @@
+##fileformat=VCFv4.2
+##fileDate=20250704
+##source=CFSAN SNP-Pipeline 2.2.1
+##reference=NS3.fa
+##INFO=<ID=NS,Number=1,Type=Integer,Description="Number of samples with data">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=SDP,Number=1,Type=Integer,Description="Raw read depth">
+##FORMAT=<ID=RD,Number=1,Type=Integer,Description="Depth of reference-supporting bases">
+##FORMAT=<ID=AD,Number=A,Type=Integer,Description="Depth of variant-supporting bases (comma-separated depth per alt allele)">
+##FORMAT=<ID=RDF,Number=1,Type=Integer,Description="Depth of reference-supporting bases on forward strand">
+##FORMAT=<ID=RDR,Number=1,Type=Integer,Description="Depth of reference-supporting bases on reverse strand">
+##FORMAT=<ID=ADF,Number=A,Type=Integer,Description="Depth of variant-supporting bases on forward strand (comma-separated depth per alt allele)">
+##FORMAT=<ID=ADR,Number=A,Type=Integer,Description="Depth of variant-supporting bases on reverse strand (comma-separated depth per alt allele)">
+##FORMAT=<ID=FT,Number=1,Type=String,Description="Genotype filters using the same codes as the FILTER data element">
+##FILTER=<ID=PASS,Description="All filters passed">
+##FILTER=<ID=RawDpth,Description="No read depth">
+##FILTER=<ID=VarFreq60,Description="Variant base frequency below 0.60">
+##FILTER=<ID=Depth3,Description="Less than 3 supporting reads">
+##FILTER=<ID=StrDpth0,Description="Less than 0 variant-supporing reads on at least one strand">
+##FILTER=<ID=StrBias0,Description="Fraction of variant supporting reads below 0.00 on one strand">
+##FILTER=<ID=Region,Description="Position is in dense region of snps or near the end of the contig.">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	NS1
+contig00002	157045	.	T	.	.	PASS	NS=1	GT:SDP:RD:AD:RDF:RDR:ADF:ADR:FT	0:153:153:0:90:63:0:0:PASS
+contig00002	157046	.	T	.	.	PASS	NS=1	GT:SDP:RD:AD:RDF:RDR:ADF:ADR:FT	0:154:154:0:91:63:0:0:PASS
+contig00002	157047	.	G	.	.	PASS	NS=1	GT:SDP:RD:AD:RDF:RDR:ADF:ADR:FT	0:149:149:0:87:62:0:0:PASS
+contig00002	181070	.	G	A	.	PASS	NS=1	GT:SDP:RD:AD:RDF:RDR:ADF:ADR:FT	0:36:35:1:16:19:0:1:PASS
+contig00002	181109	.	C	.	.	PASS	NS=1	GT:SDP:RD:AD:RDF:RDR:ADF:ADR:FT	0:23:23:0:5:18:0:0:PASS
+contig00002	181111	.	T	.	.	PASS	NS=1	GT:SDP:RD:AD:RDF:RDR:ADF:ADR:FT	0:23:23:0:5:18:0:0:PASS
+contig00003	520866	.	A	.	.	PASS	NS=1	GT:SDP:RD:AD:RDF:RDR:ADF:ADR:FT	0:171:171:0:88:83:0:0:PASS
+contig00003	638416	.	C	.	.	PASS	NS=1	GT:SDP:RD:AD:RDF:RDR:ADF:ADR:FT	0:163:163:0:130:33:0:0:PASS
+contig00007	29925	.	A	C	.	PASS	NS=1	GT:SDP:RD:AD:RDF:RDR:ADF:ADR:FT	0:373:372:1:175:197:1:0:PASS
+contig00013	22213	.	G	.	.	PASS	NS=1	GT:SDP:RD:AD:RDF:RDR:ADF:ADR:FT	0:176:176:0:90:86:0:0:PASS
+contig00018	22196	.	A	G	.	PASS	NS=1	GT:SDP:RD:AD:RDF:RDR:ADF:ADR:FT	1:65:0:65:0:0:10:55:PASS
+contig00018	22205	.	A	G	.	PASS	NS=1	GT:SDP:RD:AD:RDF:RDR:ADF:ADR:FT	1:53:0:53:0:0:4:49:PASS

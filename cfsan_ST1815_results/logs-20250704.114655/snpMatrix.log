@@ -1,0 +1,23 @@
+# Command           : /home/lab-micro-10/miniconda3/envs/cfsan_illu/bin/cfsan_snp_pipeline snp_matrix -c consensus.fasta -o ./ST1815_ref/snpma.fasta --verbose 1 ./ST1815_ref/sampleDirectories.txt.OrigVCF.filtered
+# Working Directory : /home/lab-micro-10/WGS_salmonella/cfsan
+# Hostname          : lab-micro-10
+# RAM               : 96.316 MB
+# Python Version    : 3.6.10 |Anaconda, Inc.| (default, Mar 25 2020, 23:51:54)  [GCC 7.3.0]
+# Program Version   : cfsan_snp_pipeline snp_matrix 2.2.1
+
+# 2025-07-04 12:20:57 cfsan_snp_pipeline snp_matrix -c consensus.fasta -o ./ST1815_ref/snpma.fasta --verbose 1 ./ST1815_ref/sampleDirectories.txt.OrigVCF.filtered
+Options:
+    consFileName=consensus.fasta
+    forceFlag=False
+    sampleDirsFile=./ST1815_ref/sampleDirectories.txt.OrigVCF.filtered
+    snpmaFile=./ST1815_ref/snpma.fasta
+    verbose=1
+
+Merging ./ST1815_ref/samples/NS1/consensus.fasta
+Merging ./ST1815_ref/samples/NS3/consensus.fasta
+Merging ./ST1815_ref/samples/NS4/consensus.fasta
+Merging ./ST1815_ref/samples/WR1/consensus.fasta
+Merging ./ST1815_ref/samples/WR2/consensus.fasta
+Merging ./ST1815_ref/samples/WR3/consensus.fasta
+
+# 2025-07-04 12:20:57 cfsan_snp_pipeline snp_matrix finished

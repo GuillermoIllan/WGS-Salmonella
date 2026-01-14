@@ -1,0 +1,72 @@
+# Command           : /home/lab-micro-10/miniconda3/envs/cfsan_illu/bin/cfsan_snp_pipeline map_reads --threads 8 ./ST1815_ref/reference/NS3.fa ./ST1815_ref/samples/NS3/NS3_trimmed_1.fastq.gz ./ST1815_ref/samples/NS3/NS3_trimmed_2.fastq.gz
+# Working Directory : /home/lab-micro-10/WGS_salmonella/cfsan
+# Hostname          : lab-micro-10
+# RAM               : 96.316 MB
+# Python Version    : 3.6.10 |Anaconda, Inc.| (default, Mar 25 2020, 23:51:54)  [GCC 7.3.0]
+# Program Version   : cfsan_snp_pipeline map_reads 2.2.1
+
+# 2025-07-04 11:46:58 cfsan_snp_pipeline map_reads --threads 8 ./ST1815_ref/reference/NS3.fa ./ST1815_ref/samples/NS3/NS3_trimmed_1.fastq.gz ./ST1815_ref/samples/NS3/NS3_trimmed_2.fastq.gz
+Options:
+    forceFlag=False
+    referenceFile=./ST1815_ref/reference/NS3.fa
+    sampleFastqFile1=./ST1815_ref/samples/NS3/NS3_trimmed_1.fastq.gz
+    sampleFastqFile2=./ST1815_ref/samples/NS3/NS3_trimmed_2.fastq.gz
+    threads=8
+    verbose=1
+
+# Align sequence NS3 to reference NS3
+# 2025-07-04 11:46:59 bowtie2  --rg-id 22JJMJLT4.4 --rg SM:NS3 --rg LB:1 --rg PL:illumina --rg PU:22JJMJLT4.4.NS3 --reorder -X 1000 -p 8 -x ./ST1815_ref/reference/NS3 -1 ./ST1815_ref/samples/NS3/NS3_trimmed_1.fastq.gz -2 ./ST1815_ref/samples/NS3/NS3_trimmed_2.fastq.gz
+# bowtie2 version 2.3.4.1
+6952088 reads; of these:
+  6952088 (100.00%) were paired; of these:
+    114518 (1.65%) aligned concordantly 0 times
+    6806404 (97.90%) aligned concordantly exactly 1 time
+    31166 (0.45%) aligned concordantly >1 times
+    ----
+    114518 pairs aligned concordantly 0 times; of these:
+      33978 (29.67%) aligned discordantly 1 time
+    ----
+    80540 pairs aligned 0 times concordantly or discordantly; of these:
+      161080 mates make up the pairs; of these:
+        19788 (12.28%) aligned 0 times
+        70181 (43.57%) aligned exactly 1 time
+        71111 (44.15%) aligned >1 times
+99.86% overall alignment rate
+
+# Convert sam file to bam file with only mapped positions.
+# 2025-07-04 11:53:39 samtools view -S -b -F 4 -q 30 --threads 8 -o ./ST1815_ref/samples/NS3/reads.unsorted.bam ./ST1815_ref/samples/NS3/reads.sam
+# SAMtools version 1.6
+
+# Convert bam to sorted bam file.
+# 2025-07-04 11:54:03 samtools sort --threads 8 -o ./ST1815_ref/samples/NS3/reads.sorted.bam ./ST1815_ref/samples/NS3/reads.unsorted.bam
+# SAMtools version 1.6
+[bam_sort_core] merging from 0 files and 8 in-memory blocks...
+
+# Mark duplicate reads in bam file.
+# 2025-07-04 11:54:16 java -Xmx2000m -jar /home/lab-micro-10/miniconda3/envs/cfsan_illu/share/picard-2.18.4-0/picard.jar MarkDuplicates INPUT=./ST1815_ref/samples/NS3/reads.sorted.bam OUTPUT=./ST1815_ref/samples/NS3/reads.sorted.deduped.bam METRICS_FILE=./ST1815_ref/samples/NS3/duplicate_reads_metrics.txt VERBOSITY=WARNING
+# Picard version 2.18.4-SNAPSHOT
+11:54:16.616 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/lab-micro-10/miniconda3/envs/cfsan_illu/share/picard-2.18.4-0/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Fri Jul 04 11:54:16 CEST 2025] MarkDuplicates INPUT=[./ST1815_ref/samples/NS3/reads.sorted.bam] OUTPUT=./ST1815_ref/samples/NS3/reads.sorted.deduped.bam METRICS_FILE=./ST1815_ref/samples/NS3/duplicate_reads_metrics.txt VERBOSITY=WARNING    MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP=50000 MAX_FILE_HANDLES_FOR_READ_ENDS_MAP=8000 SORTING_COLLECTION_SIZE_RATIO=0.25 TAG_DUPLICATE_SET_MEMBERS=false REMOVE_SEQUENCING_DUPLICATES=false TAGGING_POLICY=DontTag CLEAR_DT=true ADD_PG_TAG_TO_READS=true REMOVE_DUPLICATES=false ASSUME_SORTED=false DUPLICATE_SCORING_STRATEGY=SUM_OF_BASE_QUALITIES PROGRAM_RECORD_ID=MarkDuplicates PROGRAM_GROUP_NAME=MarkDuplicates READ_NAME_REGEX=<optimized capture of last three ':' separated fields as numeric values> OPTICAL_DUPLICATE_PIXEL_DISTANCE=100 MAX_OPTICAL_DUPLICATE_SET_SIZE=300000 QUIET=false VALIDATION_STRINGENCY=STRICT COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json USE_JDK_DEFLATER=false USE_JDK_INFLATER=false
+[Fri Jul 04 11:54:16 CEST 2025] Executing as lab-micro-10@lab-micro-10 on Linux 6.11.0-29-generic amd64; OpenJDK 64-Bit Server VM 1.8.0_152-release-1056-b12; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: 2.18.4-SNAPSHOT
+[Fri Jul 04 11:55:39 CEST 2025] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 1,38 minutes.
+Runtime.totalMemory()=1815085056
+
+# Index bam file.
+# 2025-07-04 11:55:39 samtools index -@ 4 ./ST1815_ref/samples/NS3/reads.sorted.deduped.bam ./ST1815_ref/samples/NS3/reads.sorted.deduped.bai
+# SAMtools version 1.6
+
+# Identify targets for realignment.
+# 2025-07-04 11:55:40 java -Xmx3500m -jar /home/lab-micro-10/miniconda3/envs/cfsan_illu/opt/gatk-3.8/GenomeAnalysisTK.jar -T RealignerTargetCreator -R ./ST1815_ref/reference/NS3.fa -I ./ST1815_ref/samples/NS3/reads.sorted.deduped.bam -o ./ST1815_ref/samples/NS3/realign.target.intervals --logging_level WARN --num_threads 8
+# GATK version 3.8-1-0-gf15c1c3ef
+------------------------------------------------------------------------------------------
+Done. There were no warn messages.
+------------------------------------------------------------------------------------------
+
+# Realign around indels
+# 2025-07-04 11:55:48 java -Xmx3500m -jar /home/lab-micro-10/miniconda3/envs/cfsan_illu/opt/gatk-3.8/GenomeAnalysisTK.jar -T IndelRealigner -R ./ST1815_ref/reference/NS3.fa -targetIntervals ./ST1815_ref/samples/NS3/realign.target.intervals -I ./ST1815_ref/samples/NS3/reads.sorted.deduped.bam -o ./ST1815_ref/samples/NS3/reads.sorted.deduped.indelrealigned.bam --logging_level WARN
+# GATK version 3.8-1-0-gf15c1c3ef
+------------------------------------------------------------------------------------------
+Done. There were no warn messages.
+------------------------------------------------------------------------------------------
+
+# 2025-07-04 11:57:55 cfsan_snp_pipeline map_reads finished

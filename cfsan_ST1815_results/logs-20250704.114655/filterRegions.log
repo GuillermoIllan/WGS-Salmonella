@@ -1,0 +1,28 @@
+# Command           : /home/lab-micro-10/miniconda3/envs/cfsan_illu/bin/cfsan_snp_pipeline filter_regions -n var.flt.vcf ./ST1815_ref/sampleDirectories.txt ./ST1815_ref/reference/NS3.fa --edge_length 500 --window_size 1000 125 15 --max_snp 3 2 1 --verbose 1 --mode all
+# Working Directory : /home/lab-micro-10/WGS_salmonella/cfsan
+# Hostname          : lab-micro-10
+# RAM               : 96.316 MB
+# Python Version    : 3.6.10 |Anaconda, Inc.| (default, Mar 25 2020, 23:51:54)  [GCC 7.3.0]
+# Program Version   : cfsan_snp_pipeline filter_regions 2.2.1
+
+# 2025-07-04 12:20:49 cfsan_snp_pipeline filter_regions -n var.flt.vcf ./ST1815_ref/sampleDirectories.txt ./ST1815_ref/reference/NS3.fa --edge_length 500 --window_size 1000 125 15 --max_snp 3 2 1 --verbose 1 --mode all
+Options:
+    edgeLength=500
+    forceFlag=False
+    maxSnpsList=[3, 2, 1]
+    mode=all
+    outGroupFile=None
+    refFastaFile=./ST1815_ref/reference/NS3.fa
+    sampleDirsFile=./ST1815_ref/sampleDirectories.txt
+    vcfFileName=var.flt.vcf
+    verbose=1
+    windowSizeList=[1000, 125, 15]
+
+Processing sample NS1
+Processing sample NS3
+Processing sample NS4
+Processing sample WR1
+Processing sample WR2
+Processing sample WR3
+
+# 2025-07-04 12:20:49 cfsan_snp_pipeline filter_regions finished

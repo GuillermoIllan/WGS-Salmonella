@@ -1,0 +1,7 @@
+snp-dists 0.8.2	NS1	NS3	NS4	WR1	WR2	WR3
+NS1	0	0	4	2	0	0
+NS3	0	0	4	2	0	0
+NS4	4	4	0	2	4	4
+WR1	2	2	2	0	2	2
+WR2	0	0	4	2	0	0
+WR3	0	0	4	2	0	0

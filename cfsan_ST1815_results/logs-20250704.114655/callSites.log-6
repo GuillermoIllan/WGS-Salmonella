@@ -1,0 +1,38 @@
+# Command           : /home/lab-micro-10/miniconda3/envs/cfsan_illu/bin/cfsan_snp_pipeline call_sites ./ST1815_ref/reference/NS3.fa ./ST1815_ref/samples/NS1
+# Working Directory : /home/lab-micro-10/WGS_salmonella/cfsan
+# Hostname          : lab-micro-10
+# RAM               : 96.316 MB
+# CLASSPATH         : /home/lab-micro-10/miniconda3/envs/cfsan_illu/share/varscan-2.4.0-1/VarScan.jar:/home/lab-micro-10/miniconda3/envs/cfsan_illu/share/picard-2.18.4-0/picard.jar:/home/lab-micro-10/miniconda3/envs/cfsan_illu/opt/gatk-3.8/GenomeAnalysisTK.jar:/home/lab-micro-10/miniconda3/envs/wgs_snp_pipeline/share/varscan-2.4.0-1/VarScan.jar:/home/lab-micro-10/miniconda3/envs/wgs_snp_pipeline/share/picard-2.18.4-0/picard.jar:/home/lab-micro-10/miniconda3/envs/wgs_snp_pipeline/pkgs/gatk-3.8-py36_4/GenomeAnalysisTK.jar
+# Python Version    : 3.6.10 |Anaconda, Inc.| (default, Mar 25 2020, 23:51:54)  [GCC 7.3.0]
+# Program Version   : cfsan_snp_pipeline call_sites 2.2.1
+
+# 2025-07-04 12:06:54 cfsan_snp_pipeline call_sites ./ST1815_ref/reference/NS3.fa ./ST1815_ref/samples/NS1
+Options:
+    forceFlag=False
+    referenceFile=./ST1815_ref/reference/NS3.fa
+    sampleDir=./ST1815_ref/samples/NS1
+    verbose=1
+
+# Create pileup from bam file.
+# 2025-07-04 12:06:54 samtools mpileup -q 0 -Q 13 -A -f ./ST1815_ref/reference/NS3.fa ./ST1815_ref/samples/NS1/reads.sorted.deduped.indelrealigned.bam
+# SAMtools version 1.6
+[mpileup] 1 samples in 1 input files
+<mpileup> Set max per-file depth to 8000
+
+# Create vcf file
+# 2025-07-04 12:15:15 java  -jar /home/lab-micro-10/miniconda3/envs/cfsan_illu/share/varscan-2.4.0-1/VarScan.jar mpileup2snp ./ST1815_ref/samples/NS1/reads.all.pileup --output-vcf 1 --min-avg-qual 15 --min-var-freq 0.90 --min-reads2 5
+# VarScan version v2.4
+Only SNPs will be reported
+Warning: No p-value threshold provided, so p-values will not be calculated
+Min coverage:	8
+Min reads2:	5
+Min var freq:	0.9
+Min avg qual:	15
+P-value thresh:	0.01
+Reading input from ./ST1815_ref/samples/NS1/reads.all.pileup
+4821693 bases in pileup file
+2 variant positions (2 SNP, 0 indel)
+1 were failed by the strand-filter
+1 variant positions reported (1 SNP, 0 indel)
+
+# 2025-07-04 12:16:59 cfsan_snp_pipeline call_sites finished

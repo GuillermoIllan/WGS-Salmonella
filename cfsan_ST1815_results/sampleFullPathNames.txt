@@ -1,0 +1,6 @@
+./ST1815_ref/samples/NS4/NS4_trimmed_1.fastq.gz ./ST1815_ref/samples/NS4/NS4_trimmed_2.fastq.gz
+./ST1815_ref/samples/WR3/WR3_trimmed_1.fastq.gz ./ST1815_ref/samples/WR3/WR3_trimmed_2.fastq.gz
+./ST1815_ref/samples/NS3/NS3_trimmed_1.fastq.gz ./ST1815_ref/samples/NS3/NS3_trimmed_2.fastq.gz
+./ST1815_ref/samples/WR2/WR2_trimmed_1.fastq.gz ./ST1815_ref/samples/WR2/WR2_trimmed_2.fastq.gz
+./ST1815_ref/samples/WR1/WR1_trimmed_1.fastq.gz ./ST1815_ref/samples/WR1/WR1_trimmed_2.fastq.gz
+./ST1815_ref/samples/NS1/NS1_trimmed_1.fastq.gz ./ST1815_ref/samples/NS1/NS1_trimmed_2.fastq.gz

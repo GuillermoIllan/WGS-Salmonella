@@ -1,0 +1,214 @@
+# Command           : /home/lab-micro-10/miniconda3/envs/cfsan_illu/bin/cfsan_snp_pipeline index_ref ./ST1815_ref/reference/NS3.fa
+# Working Directory : /home/lab-micro-10/WGS_salmonella/cfsan
+# Hostname          : lab-micro-10
+# RAM               : 96.316 MB
+# Python Version    : 3.6.10 |Anaconda, Inc.| (default, Mar 25 2020, 23:51:54)  [GCC 7.3.0]
+# Program Version   : cfsan_snp_pipeline index_ref 2.2.1
+
+# 2025-07-04 11:46:57 cfsan_snp_pipeline index_ref ./ST1815_ref/reference/NS3.fa
+Options:
+    forceFlag=False
+    referenceFile=./ST1815_ref/reference/NS3.fa
+    verbose=1
+
+# 2025-07-04 11:46:57 bowtie2-build  ./ST1815_ref/reference/NS3.fa ./ST1815_ref/reference/NS3
+# bowtie2 version 2.3.4.1
+Settings:
+  Output files: "./ST1815_ref/reference/NS3.*.bt2"
+  Line rate: 6 (line is 64 bytes)
+  Lines per side: 1 (side is 64 bytes)
+  Offset rate: 4 (one in 16)
+  FTable chars: 10
+  Strings: unpacked
+  Max bucket size: default
+  Max bucket size, sqrt multiplier: default
+  Max bucket size, len divisor: 4
+  Difference-cover sample period: 1024
+  Endianness: little
+  Actual local endianness: little
+  Sanity checking: disabled
+  Assertions: disabled
+  Random seed: 0
+  Sizeofs: void*:8, int:4, long:8, size_t:8
+Input files DNA, FASTA:
+  ./ST1815_ref/reference/NS3.fa
+Building a SMALL index
+Reading reference sizes
+  Time reading reference sizes: 00:00:00
+Calculating joined length
+Writing header
+Reserving space for joined string
+Joining reference sequences
+  Time to join reference sequences: 00:00:00
+bmax according to bmaxDivN setting: 1234970
+Using parameters --bmax 926228 --dcv 1024
+  Doing ahead-of-time memory usage test
+  Passed!  Constructing with these parameters: --bmax 926228 --dcv 1024
+Constructing suffix-array element generator
+Building DifferenceCoverSample
+  Building sPrime
+  Building sPrimeOrder
+  V-Sorting samples
+  V-Sorting samples time: 00:00:00
+  Allocating rank array
+  Ranking v-sort output
+  Ranking v-sort output time: 00:00:00
+  Invoking Larsson-Sadakane on ranks
+  Invoking Larsson-Sadakane on ranks time: 00:00:00
+  Sanity-checking and returning
+Building samples
+Reserving space for 12 sample suffixes
+Generating random suffixes
+QSorting 12 sample offsets, eliminating duplicates
+QSorting sample offsets, eliminating duplicates time: 00:00:00
+Multikey QSorting 12 samples
+  (Using difference cover)
+  Multikey QSorting samples time: 00:00:00
+Calculating bucket sizes
+Splitting and merging
+  Splitting and merging time: 00:00:00
+Avg bucket size: 4.93988e+06 (target: 926227)
+Converting suffix-array elements to index image
+Allocating ftab, absorbFtab
+Entering Ebwt loop
+Getting block 1 of 1
+  No samples; assembling all-inclusive block
+  Sorting block of length 4939880 for bucket 1
+  (Using difference cover)
+  Sorting block time: 00:00:00
+Returning block of 4939881 for bucket 1
+Exited Ebwt loop
+fchr[A]: 0
+fchr[C]: 1179938
+fchr[G]: 2456148
+fchr[T]: 3757281
+fchr[$]: 4939880
+Exiting Ebwt::buildToDisk()
+Returning from initFromVector
+Wrote 5859234 bytes to primary EBWT file: ./ST1815_ref/reference/NS3.1.bt2
+Wrote 1234976 bytes to secondary EBWT file: ./ST1815_ref/reference/NS3.2.bt2
+Re-opening _in1 and _in2 as input streams
+Returning from Ebwt constructor
+Headers:
+    len: 4939880
+    bwtLen: 4939881
+    sz: 1234970
+    bwtSz: 1234971
+    lineRate: 6
+    offRate: 4
+    offMask: 0xfffffff0
+    ftabChars: 10
+    eftabLen: 20
+    eftabSz: 80
+    ftabLen: 1048577
+    ftabSz: 4194308
+    offsLen: 308743
+    offsSz: 1234972
+    lineSz: 64
+    sideSz: 64
+    sideBwtSz: 48
+    sideBwtLen: 192
+    numSides: 25729
+    numLines: 25729
+    ebwtTotLen: 1646656
+    ebwtTotSz: 1646656
+    color: 0
+    reverse: 0
+Total time for call to driver() for forward index: 00:00:00
+Reading reference sizes
+  Time reading reference sizes: 00:00:00
+Calculating joined length
+Writing header
+Reserving space for joined string
+Joining reference sequences
+  Time to join reference sequences: 00:00:00
+  Time to reverse reference sequence: 00:00:00
+bmax according to bmaxDivN setting: 1234970
+Using parameters --bmax 926228 --dcv 1024
+  Doing ahead-of-time memory usage test
+  Passed!  Constructing with these parameters: --bmax 926228 --dcv 1024
+Constructing suffix-array element generator
+Building DifferenceCoverSample
+  Building sPrime
+  Building sPrimeOrder
+  V-Sorting samples
+  V-Sorting samples time: 00:00:00
+  Allocating rank array
+  Ranking v-sort output
+  Ranking v-sort output time: 00:00:00
+  Invoking Larsson-Sadakane on ranks
+  Invoking Larsson-Sadakane on ranks time: 00:00:00
+  Sanity-checking and returning
+Building samples
+Reserving space for 12 sample suffixes
+Generating random suffixes
+QSorting 12 sample offsets, eliminating duplicates
+QSorting sample offsets, eliminating duplicates time: 00:00:00
+Multikey QSorting 12 samples
+  (Using difference cover)
+  Multikey QSorting samples time: 00:00:00
+Calculating bucket sizes
+Splitting and merging
+  Splitting and merging time: 00:00:00
+Avg bucket size: 4.93988e+06 (target: 926227)
+Converting suffix-array elements to index image
+Allocating ftab, absorbFtab
+Entering Ebwt loop
+Getting block 1 of 1
+  No samples; assembling all-inclusive block
+  Sorting block of length 4939880 for bucket 1
+  (Using difference cover)
+  Sorting block time: 00:00:00
+Returning block of 4939881 for bucket 1
+Exited Ebwt loop
+fchr[A]: 0
+fchr[C]: 1179938
+fchr[G]: 2456148
+fchr[T]: 3757281
+fchr[$]: 4939880
+Exiting Ebwt::buildToDisk()
+Returning from initFromVector
+Wrote 5859234 bytes to primary EBWT file: ./ST1815_ref/reference/NS3.rev.1.bt2
+Wrote 1234976 bytes to secondary EBWT file: ./ST1815_ref/reference/NS3.rev.2.bt2
+Re-opening _in1 and _in2 as input streams
+Returning from Ebwt constructor
+Headers:
+    len: 4939880
+    bwtLen: 4939881
+    sz: 1234970
+    bwtSz: 1234971
+    lineRate: 6
+    offRate: 4
+    offMask: 0xfffffff0
+    ftabChars: 10
+    eftabLen: 20
+    eftabSz: 80
+    ftabLen: 1048577
+    ftabSz: 4194308
+    offsLen: 308743
+    offsSz: 1234972
+    lineSz: 64
+    sideSz: 64
+    sideBwtSz: 48
+    sideBwtLen: 192
+    numSides: 25729
+    numLines: 25729
+    ebwtTotLen: 1646656
+    ebwtTotSz: 1646656
+    color: 0
+    reverse: 1
+Total time for backward call to driver() for mirror index: 00:00:00
+
+# 2025-07-04 11:46:57 samtools faidx  ./ST1815_ref/reference/NS3.fa
+# samtools version 1.6
+
+# Create reference sequence dictionary.
+# 2025-07-04 11:46:58 java -Xmx2000m -jar /home/lab-micro-10/miniconda3/envs/cfsan_illu/share/picard-2.18.4-0/picard.jar CreateSequenceDictionary REFERENCE=./ST1815_ref/reference/NS3.fa OUTPUT=./ST1815_ref/reference/NS3.dict VERBOSITY=WARNING
+# Picard version 2.18.4-SNAPSHOT
+11:46:58.457 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/lab-micro-10/miniconda3/envs/cfsan_illu/share/picard-2.18.4-0/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Fri Jul 04 11:46:58 CEST 2025] CreateSequenceDictionary OUTPUT=./ST1815_ref/reference/NS3.dict VERBOSITY=WARNING REFERENCE=./ST1815_ref/reference/NS3.fa    TRUNCATE_NAMES_AT_WHITESPACE=true NUM_SEQUENCES=2147483647 QUIET=false VALIDATION_STRINGENCY=STRICT COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json USE_JDK_DEFLATER=false USE_JDK_INFLATER=false
+[Fri Jul 04 11:46:58 CEST 2025] Executing as lab-micro-10@lab-micro-10 on Linux 6.11.0-29-generic amd64; OpenJDK 64-Bit Server VM 1.8.0_152-release-1056-b12; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: 2.18.4-SNAPSHOT
+[Fri Jul 04 11:46:58 CEST 2025] picard.sam.CreateSequenceDictionary done. Elapsed time: 0,00 minutes.
+Runtime.totalMemory()=1513619456
+
+# 2025-07-04 11:46:58 cfsan_snp_pipeline index_ref finished

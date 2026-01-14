@@ -1,0 +1,11 @@
+Error detected while running cfsan_snp_pipeline merge_vcfs.
+
+The command line was:
+    cfsan_snp_pipeline merge_vcfs -o ./ST1815_ref/snpma.vcf ./ST1815_ref/sampleDirectories.txt.OrigVCF.filtered
+
+The error occured while running:
+    bcftools merge -o ./ST1815_ref/snpma.vcf --merge all --info-rules NS:sum ./ST1815_ref/tmp.vcf.o8com5m3/*.gz
+================================================================================
+See also the log files in directory ./ST1815_ref/logs-20250704.114655
+Shutting down the SNP Pipeline.
+================================================================================

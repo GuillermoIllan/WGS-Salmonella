@@ -1,0 +1,41 @@
+# Command           : /home/lab-micro-10/miniconda3/envs/cfsan_illu/bin/cfsan_snp_pipeline merge_vcfs -o ./ST1815_ref/snpma.vcf ./ST1815_ref/sampleDirectories.txt.OrigVCF.filtered
+# Working Directory : /home/lab-micro-10/WGS_salmonella/cfsan
+# Hostname          : lab-micro-10
+# RAM               : 96.316 MB
+# Python Version    : 3.6.10 |Anaconda, Inc.| (default, Mar 25 2020, 23:51:54)  [GCC 7.3.0]
+# Program Version   : cfsan_snp_pipeline merge_vcfs 2.2.1
+
+# 2025-07-04 12:20:57 cfsan_snp_pipeline merge_vcfs -o ./ST1815_ref/snpma.vcf ./ST1815_ref/sampleDirectories.txt.OrigVCF.filtered
+Options:
+    forceFlag=False
+    mergedVcfFile=./ST1815_ref/snpma.vcf
+    sampleDirsFile=./ST1815_ref/sampleDirectories.txt.OrigVCF.filtered
+    vcfFileName=consensus.vcf
+    verbose=1
+
+# 2025-07-04 12:20:57 Copying VCF files to temp directory
+copy ./ST1815_ref/samples/NS4/consensus.vcf ./ST1815_ref/tmp.vcf.o8com5m3/NS4.vcf
+copy ./ST1815_ref/samples/WR3/consensus.vcf ./ST1815_ref/tmp.vcf.o8com5m3/WR3.vcf
+copy ./ST1815_ref/samples/NS3/consensus.vcf ./ST1815_ref/tmp.vcf.o8com5m3/NS3.vcf
+copy ./ST1815_ref/samples/WR2/consensus.vcf ./ST1815_ref/tmp.vcf.o8com5m3/WR2.vcf
+copy ./ST1815_ref/samples/WR1/consensus.vcf ./ST1815_ref/tmp.vcf.o8com5m3/WR1.vcf
+copy ./ST1815_ref/samples/NS1/consensus.vcf ./ST1815_ref/tmp.vcf.o8com5m3/NS1.vcf
+# 2025-07-04 12:20:57 Compressing VCF files
+bgzip -c ./ST1815_ref/tmp.vcf.o8com5m3/NS4.vcf > ./ST1815_ref/tmp.vcf.o8com5m3/NS4.vcf.gz
+bgzip -c ./ST1815_ref/tmp.vcf.o8com5m3/WR3.vcf > ./ST1815_ref/tmp.vcf.o8com5m3/WR3.vcf.gz
+bgzip -c ./ST1815_ref/tmp.vcf.o8com5m3/NS3.vcf > ./ST1815_ref/tmp.vcf.o8com5m3/NS3.vcf.gz
+bgzip -c ./ST1815_ref/tmp.vcf.o8com5m3/WR2.vcf > ./ST1815_ref/tmp.vcf.o8com5m3/WR2.vcf.gz
+bgzip -c ./ST1815_ref/tmp.vcf.o8com5m3/WR1.vcf > ./ST1815_ref/tmp.vcf.o8com5m3/WR1.vcf.gz
+bgzip -c ./ST1815_ref/tmp.vcf.o8com5m3/NS1.vcf > ./ST1815_ref/tmp.vcf.o8com5m3/NS1.vcf.gz
+# 2025-07-04 12:20:58 Indexing VCF files
+tabix -f -p vcf ./ST1815_ref/tmp.vcf.o8com5m3/NS4.vcf.gz
+tabix -f -p vcf ./ST1815_ref/tmp.vcf.o8com5m3/WR3.vcf.gz
+tabix -f -p vcf ./ST1815_ref/tmp.vcf.o8com5m3/NS3.vcf.gz
+tabix -f -p vcf ./ST1815_ref/tmp.vcf.o8com5m3/WR2.vcf.gz
+tabix -f -p vcf ./ST1815_ref/tmp.vcf.o8com5m3/WR1.vcf.gz
+tabix -f -p vcf ./ST1815_ref/tmp.vcf.o8com5m3/NS1.vcf.gz
+# 2025-07-04 12:20:58 Merging VCF files
+bcftools merge -o ./ST1815_ref/snpma.vcf --merge all --info-rules NS:sum ./ST1815_ref/tmp.vcf.o8com5m3/*.gz
+bcftools: error while loading shared libraries: libcrypto.so.1.0.0: cannot open shared object file: No such file or directory
+Error occured while running:
+    bcftools merge -o ./ST1815_ref/snpma.vcf --merge all --info-rules NS:sum ./ST1815_ref/tmp.vcf.o8com5m3/*.gz

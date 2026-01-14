@@ -1,0 +1,24 @@
+##fileformat=VCFv4.2
+##fileDate=20250704
+##source=CFSAN SNP-Pipeline 2.2.1
+##reference=PBH5.fa
+##INFO=<ID=NS,Number=1,Type=Integer,Description="Number of samples with data">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=SDP,Number=1,Type=Integer,Description="Raw read depth">
+##FORMAT=<ID=RD,Number=1,Type=Integer,Description="Depth of reference-supporting bases">
+##FORMAT=<ID=AD,Number=A,Type=Integer,Description="Depth of variant-supporting bases (comma-separated depth per alt allele)">
+##FORMAT=<ID=RDF,Number=1,Type=Integer,Description="Depth of reference-supporting bases on forward strand">
+##FORMAT=<ID=RDR,Number=1,Type=Integer,Description="Depth of reference-supporting bases on reverse strand">
+##FORMAT=<ID=ADF,Number=A,Type=Integer,Description="Depth of variant-supporting bases on forward strand (comma-separated depth per alt allele)">
+##FORMAT=<ID=ADR,Number=A,Type=Integer,Description="Depth of variant-supporting bases on reverse strand (comma-separated depth per alt allele)">
+##FORMAT=<ID=FT,Number=1,Type=String,Description="Genotype filters using the same codes as the FILTER data element">
+##FILTER=<ID=PASS,Description="All filters passed">
+##FILTER=<ID=RawDpth,Description="No read depth">
+##FILTER=<ID=VarFreq60,Description="Variant base frequency below 0.60">
+##FILTER=<ID=Depth3,Description="Less than 3 supporting reads">
+##FILTER=<ID=StrDpth0,Description="Less than 0 variant-supporing reads on at least one strand">
+##FILTER=<ID=StrBias0,Description="Fraction of variant supporting reads below 0.00 on one strand">
+##FILTER=<ID=Region,Description="Position is in dense region of snps or near the end of the contig.">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	PBH6
+contig00001	321851	.	C	.	.	PASS	NS=1	GT:SDP:RD:AD:RDF:RDR:ADF:ADR:FT	0:248:248:0:122:126:0:0:PASS
+contig00004	21572	.	T	C	.	PASS	NS=1	GT:SDP:RD:AD:RDF:RDR:ADF:ADR:FT	1:113:0:113:0:0:70:43:PASS

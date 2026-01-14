@@ -1,0 +1,5 @@
+./ST3614_results/samples/PBH2/PBH2_trimmed_1.fastq.gz ./ST3614_results/samples/PBH2/PBH2_trimmed_2.fastq.gz
+./ST3614_results/samples/PBH1/PBH1_trimmed_1.fastq.gz ./ST3614_results/samples/PBH1/PBH1_trimmed_2.fastq.gz
+./ST3614_results/samples/PBH3/PBH3_trimmed_1.fastq.gz ./ST3614_results/samples/PBH3/PBH3_trimmed_2.fastq.gz
+./ST3614_results/samples/PBH5/PBH5_trimmed_1.fastq.gz ./ST3614_results/samples/PBH5/PBH5_trimmed_2.fastq.gz
+./ST3614_results/samples/PBH6/PBH6_trimmed_1.fastq.gz ./ST3614_results/samples/PBH6/PBH6_trimmed_2.fastq.gz

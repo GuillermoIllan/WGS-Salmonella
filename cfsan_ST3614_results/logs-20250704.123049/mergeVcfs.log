@@ -1,0 +1,38 @@
+# Command           : /home/lab-micro-10/miniconda3/envs/cfsan_illu/bin/cfsan_snp_pipeline merge_vcfs -o ./ST3614_results/snpma.vcf ./ST3614_results/sampleDirectories.txt.OrigVCF.filtered
+# Working Directory : /home/lab-micro-10/WGS_salmonella/cfsan
+# Hostname          : lab-micro-10
+# RAM               : 96.316 MB
+# Python Version    : 3.6.10 |Anaconda, Inc.| (default, Mar 25 2020, 23:51:54)  [GCC 7.3.0]
+# Program Version   : cfsan_snp_pipeline merge_vcfs 2.2.1
+
+# 2025-07-04 12:59:32 cfsan_snp_pipeline merge_vcfs -o ./ST3614_results/snpma.vcf ./ST3614_results/sampleDirectories.txt.OrigVCF.filtered
+Options:
+    forceFlag=False
+    mergedVcfFile=./ST3614_results/snpma.vcf
+    sampleDirsFile=./ST3614_results/sampleDirectories.txt.OrigVCF.filtered
+    vcfFileName=consensus.vcf
+    verbose=1
+
+# 2025-07-04 12:59:32 Copying VCF files to temp directory
+copy ./ST3614_results/samples/PBH2/consensus.vcf ./ST3614_results/tmp.vcf.qta8sqw1/PBH2.vcf
+copy ./ST3614_results/samples/PBH1/consensus.vcf ./ST3614_results/tmp.vcf.qta8sqw1/PBH1.vcf
+copy ./ST3614_results/samples/PBH3/consensus.vcf ./ST3614_results/tmp.vcf.qta8sqw1/PBH3.vcf
+copy ./ST3614_results/samples/PBH5/consensus.vcf ./ST3614_results/tmp.vcf.qta8sqw1/PBH5.vcf
+copy ./ST3614_results/samples/PBH6/consensus.vcf ./ST3614_results/tmp.vcf.qta8sqw1/PBH6.vcf
+# 2025-07-04 12:59:32 Compressing VCF files
+bgzip -c ./ST3614_results/tmp.vcf.qta8sqw1/PBH2.vcf > ./ST3614_results/tmp.vcf.qta8sqw1/PBH2.vcf.gz
+bgzip -c ./ST3614_results/tmp.vcf.qta8sqw1/PBH1.vcf > ./ST3614_results/tmp.vcf.qta8sqw1/PBH1.vcf.gz
+bgzip -c ./ST3614_results/tmp.vcf.qta8sqw1/PBH3.vcf > ./ST3614_results/tmp.vcf.qta8sqw1/PBH3.vcf.gz
+bgzip -c ./ST3614_results/tmp.vcf.qta8sqw1/PBH5.vcf > ./ST3614_results/tmp.vcf.qta8sqw1/PBH5.vcf.gz
+bgzip -c ./ST3614_results/tmp.vcf.qta8sqw1/PBH6.vcf > ./ST3614_results/tmp.vcf.qta8sqw1/PBH6.vcf.gz
+# 2025-07-04 12:59:32 Indexing VCF files
+tabix -f -p vcf ./ST3614_results/tmp.vcf.qta8sqw1/PBH2.vcf.gz
+tabix -f -p vcf ./ST3614_results/tmp.vcf.qta8sqw1/PBH1.vcf.gz
+tabix -f -p vcf ./ST3614_results/tmp.vcf.qta8sqw1/PBH3.vcf.gz
+tabix -f -p vcf ./ST3614_results/tmp.vcf.qta8sqw1/PBH5.vcf.gz
+tabix -f -p vcf ./ST3614_results/tmp.vcf.qta8sqw1/PBH6.vcf.gz
+# 2025-07-04 12:59:32 Merging VCF files
+bcftools merge -o ./ST3614_results/snpma.vcf --merge all --info-rules NS:sum ./ST3614_results/tmp.vcf.qta8sqw1/*.gz
+bcftools: error while loading shared libraries: libcrypto.so.1.0.0: cannot open shared object file: No such file or directory
+Error occured while running:
+    bcftools merge -o ./ST3614_results/snpma.vcf --merge all --info-rules NS:sum ./ST3614_results/tmp.vcf.qta8sqw1/*.gz

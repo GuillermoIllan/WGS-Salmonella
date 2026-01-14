@@ -1,0 +1,27 @@
+# Command           : /home/lab-micro-10/miniconda3/envs/cfsan_illu/bin/cfsan_snp_pipeline filter_regions -n var.flt.vcf ./ST3614_results/sampleDirectories.txt ./ST3614_results/reference/PBH5.fa --edge_length 500 --window_size 1000 125 15 --max_snp 3 2 1 --verbose 1 --mode all
+# Working Directory : /home/lab-micro-10/WGS_salmonella/cfsan
+# Hostname          : lab-micro-10
+# RAM               : 96.316 MB
+# Python Version    : 3.6.10 |Anaconda, Inc.| (default, Mar 25 2020, 23:51:54)  [GCC 7.3.0]
+# Program Version   : cfsan_snp_pipeline filter_regions 2.2.1
+
+# 2025-07-04 12:59:24 cfsan_snp_pipeline filter_regions -n var.flt.vcf ./ST3614_results/sampleDirectories.txt ./ST3614_results/reference/PBH5.fa --edge_length 500 --window_size 1000 125 15 --max_snp 3 2 1 --verbose 1 --mode all
+Options:
+    edgeLength=500
+    forceFlag=False
+    maxSnpsList=[3, 2, 1]
+    mode=all
+    outGroupFile=None
+    refFastaFile=./ST3614_results/reference/PBH5.fa
+    sampleDirsFile=./ST3614_results/sampleDirectories.txt
+    vcfFileName=var.flt.vcf
+    verbose=1
+    windowSizeList=[1000, 125, 15]
+
+Processing sample PBH1
+Processing sample PBH2
+Processing sample PBH3
+Processing sample PBH5
+Processing sample PBH6
+
+# 2025-07-04 12:59:24 cfsan_snp_pipeline filter_regions finished

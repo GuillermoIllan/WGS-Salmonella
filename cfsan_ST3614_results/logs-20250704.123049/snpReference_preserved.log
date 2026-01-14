@@ -1,0 +1,17 @@
+# Command           : /home/lab-micro-10/miniconda3/envs/cfsan_illu/bin/cfsan_snp_pipeline snp_reference -l ./ST3614_results/snplist_preserved.txt -o ./ST3614_results/referenceSNP_preserved.fasta --verbose 1 ./ST3614_results/reference/PBH5.fa
+# Working Directory : /home/lab-micro-10/WGS_salmonella/cfsan
+# Hostname          : lab-micro-10
+# RAM               : 96.316 MB
+# Python Version    : 3.6.10 |Anaconda, Inc.| (default, Mar 25 2020, 23:51:54)  [GCC 7.3.0]
+# Program Version   : cfsan_snp_pipeline snp_reference 2.2.1
+
+# 2025-07-04 12:59:32 cfsan_snp_pipeline snp_reference -l ./ST3614_results/snplist_preserved.txt -o ./ST3614_results/referenceSNP_preserved.fasta --verbose 1 ./ST3614_results/reference/PBH5.fa
+Options:
+    forceFlag=False
+    referenceFile=./ST3614_results/reference/PBH5.fa
+    snpListFile=./ST3614_results/snplist_preserved.txt
+    snpRefFile=./ST3614_results/referenceSNP_preserved.fasta
+    verbose=1
+
+
+# 2025-07-04 12:59:32 cfsan_snp_pipeline snp_reference finished

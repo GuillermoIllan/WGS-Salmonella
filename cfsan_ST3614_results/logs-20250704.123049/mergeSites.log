@@ -1,0 +1,25 @@
+# Command           : /home/lab-micro-10/miniconda3/envs/cfsan_illu/bin/cfsan_snp_pipeline merge_sites -n var.flt.vcf -o ./ST3614_results/snplist.txt --maxsnps -1 --verbose 1 ./ST3614_results/sampleDirectories.txt ./ST3614_results/sampleDirectories.txt.OrigVCF.filtered
+# Working Directory : /home/lab-micro-10/WGS_salmonella/cfsan
+# Hostname          : lab-micro-10
+# RAM               : 96.316 MB
+# Python Version    : 3.6.10 |Anaconda, Inc.| (default, Mar 25 2020, 23:51:54)  [GCC 7.3.0]
+# Program Version   : cfsan_snp_pipeline merge_sites 2.2.1
+
+# 2025-07-04 12:59:24 cfsan_snp_pipeline merge_sites -n var.flt.vcf -o ./ST3614_results/snplist.txt --maxsnps -1 --verbose 1 ./ST3614_results/sampleDirectories.txt ./ST3614_results/sampleDirectories.txt.OrigVCF.filtered
+Options:
+    filteredSampleDirsFile=./ST3614_results/sampleDirectories.txt.OrigVCF.filtered
+    forceFlag=False
+    maxSnps=-1
+    sampleDirsFile=./ST3614_results/sampleDirectories.txt
+    snpListFile=./ST3614_results/snplist.txt
+    vcfFileName=var.flt.vcf
+    verbose=1
+
+Processing VCF file ./ST3614_results/samples/PBH1/var.flt.vcf
+Processing VCF file ./ST3614_results/samples/PBH2/var.flt.vcf
+Processing VCF file ./ST3614_results/samples/PBH3/var.flt.vcf
+Processing VCF file ./ST3614_results/samples/PBH5/var.flt.vcf
+Processing VCF file ./ST3614_results/samples/PBH6/var.flt.vcf
+Found 2 snp positions across 5 sample vcf files.
+
+# 2025-07-04 12:59:24 cfsan_snp_pipeline merge_sites finished

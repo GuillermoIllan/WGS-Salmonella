@@ -1,0 +1,32 @@
+# Command           : /home/lab-micro-10/miniconda3/envs/cfsan_illu/bin/cfsan_snp_pipeline call_consensus -l ./ST3614_results/snplist.txt -o ./ST3614_results/samples/PBH2/consensus.fasta --vcfRefName PBH5.fa --verbose 1 --minConsFreq 0.6 --minConsDpth 3 --vcfFileName consensus.vcf --vcfFileName consensus.vcf ./ST3614_results/samples/PBH2/reads.all.pileup
+# Working Directory : /home/lab-micro-10/WGS_salmonella/cfsan
+# Hostname          : lab-micro-10
+# RAM               : 96.316 MB
+# Python Version    : 3.6.10 |Anaconda, Inc.| (default, Mar 25 2020, 23:51:54)  [GCC 7.3.0]
+# Program Version   : cfsan_snp_pipeline call_consensus 2.2.1
+
+# 2025-07-04 12:59:24 cfsan_snp_pipeline call_consensus -l ./ST3614_results/snplist.txt -o ./ST3614_results/samples/PBH2/consensus.fasta --vcfRefName PBH5.fa --verbose 1 --minConsFreq 0.6 --minConsDpth 3 --vcfFileName consensus.vcf --vcfFileName consensus.vcf ./ST3614_results/samples/PBH2/reads.all.pileup
+Options:
+    allPileupFile=./ST3614_results/samples/PBH2/reads.all.pileup
+    consensusFile=./ST3614_results/samples/PBH2/consensus.fasta
+    excludeFile=None
+    forceFlag=False
+    minBaseQual=0
+    minConsDpth=3
+    minConsFreq=0.6
+    minConsStrdBias=0
+    minConsStrdDpth=0
+    snpListFile=./ST3614_results/snplist.txt
+    vcfAllPos=False
+    vcfFailedSnpGt=.
+    vcfFileName=consensus.vcf
+    vcfPreserveRefCase=False
+    vcfRefName=PBH5.fa
+    verbose=1
+
+snp position list length = 2
+excluded snps list length = 0
+total snp position list length = 2
+called consensus positions = 2
+
+# 2025-07-04 12:59:28 cfsan_snp_pipeline call_consensus finished

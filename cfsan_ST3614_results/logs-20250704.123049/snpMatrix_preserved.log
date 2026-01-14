@@ -1,0 +1,22 @@
+# Command           : /home/lab-micro-10/miniconda3/envs/cfsan_illu/bin/cfsan_snp_pipeline snp_matrix -c consensus_preserved.fasta -o ./ST3614_results/snpma_preserved.fasta --verbose 1 ./ST3614_results/sampleDirectories.txt.PresVCF.filtered
+# Working Directory : /home/lab-micro-10/WGS_salmonella/cfsan
+# Hostname          : lab-micro-10
+# RAM               : 96.316 MB
+# Python Version    : 3.6.10 |Anaconda, Inc.| (default, Mar 25 2020, 23:51:54)  [GCC 7.3.0]
+# Program Version   : cfsan_snp_pipeline snp_matrix 2.2.1
+
+# 2025-07-04 12:59:31 cfsan_snp_pipeline snp_matrix -c consensus_preserved.fasta -o ./ST3614_results/snpma_preserved.fasta --verbose 1 ./ST3614_results/sampleDirectories.txt.PresVCF.filtered
+Options:
+    consFileName=consensus_preserved.fasta
+    forceFlag=False
+    sampleDirsFile=./ST3614_results/sampleDirectories.txt.PresVCF.filtered
+    snpmaFile=./ST3614_results/snpma_preserved.fasta
+    verbose=1
+
+Merging ./ST3614_results/samples/PBH1/consensus_preserved.fasta
+Merging ./ST3614_results/samples/PBH2/consensus_preserved.fasta
+Merging ./ST3614_results/samples/PBH3/consensus_preserved.fasta
+Merging ./ST3614_results/samples/PBH5/consensus_preserved.fasta
+Merging ./ST3614_results/samples/PBH6/consensus_preserved.fasta
+
+# 2025-07-04 12:59:31 cfsan_snp_pipeline snp_matrix finished

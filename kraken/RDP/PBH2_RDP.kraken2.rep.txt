@@ -1,0 +1,8 @@
+ 57.14	4	4	U	0	unclassified
+ 42.86	3	0	R	1	root
+ 42.86	3	0	D	3	  Bacteria
+ 42.86	3	0	P	36	    "Proteobacteria"
+ 42.86	3	1	C	177	      Gammaproteobacteria
+ 14.29	1	1	C1	414	        unclassified_Gammaproteobacteria
+ 14.29	1	0	O	396	        "Enterobacteriales"
+ 14.29	1	1	F	702	          Enterobacteriaceae

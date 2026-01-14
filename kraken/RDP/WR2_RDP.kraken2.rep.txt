@@ -1,0 +1,7 @@
+ 37.50	3	3	U	0	unclassified
+ 62.50	5	0	R	1	root
+ 62.50	5	1	D	3	  Bacteria
+ 37.50	3	1	P	36	    "Proteobacteria"
+ 25.00	2	1	C	177	      Gammaproteobacteria
+ 12.50	1	1	C1	414	        unclassified_Gammaproteobacteria
+ 12.50	1	1	D1	67	    unclassified_Bacteria

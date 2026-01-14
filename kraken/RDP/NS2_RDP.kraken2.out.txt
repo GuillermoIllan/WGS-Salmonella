@@ -1,0 +1,9 @@
+C	16S_rRNA::NODE_42_length_1283_cov_916.870968:15-1283(-)	root (taxid 1)	1268	1:1234
+C	23S_rRNA::NODE_40_length_1886_cov_921.416058:0-1864(-)	unclassified_Myxococcales (taxid 692)	1864	0:1082 67:5 0:1 67:5 0:7 67:5 0:499 692:5 0:25 692:10 0:142 692:1 0:7 36:5 0:9 414:1 0:9 414:11 0:1
+U	5S_rRNA::NODE_9_length_168224_cov_100.624784:470-581(+)	unclassified (taxid 0)	111	0:77
+U	5S_rRNA::NODE_9_length_168224_cov_100.624784:715-826(+)	unclassified (taxid 0)	111	0:77
+U	5S_rRNA::NODE_36_length_4602_cov_109.289304:4507-4599(-)	unclassified (taxid 0)	92	0:58
+U	5S_rRNA::NODE_14_length_119463_cov_90.846412:3-94(+)	unclassified (taxid 0)	91	0:57
+U	5S_rRNA::NODE_4_length_265786_cov_80.534129:2-90(+)	unclassified (taxid 0)	88	0:54
+U	5S_rRNA::NODE_13_length_119528_cov_95.819783:119440-119528(-)	unclassified (taxid 0)	88	0:54
+U	5S_rRNA::NODE_20_length_84849_cov_103.174113:2-82(+)	unclassified (taxid 0)	80	0:46

@@ -1,0 +1,8 @@
+ 77.78	7	7	U	0	unclassified
+ 22.22	2	0	R	1	root
+ 22.22	2	1	D	3	  Bacteria
+ 11.11	1	0	P	2375	    Proteobacteria
+ 11.11	1	0	C	3303	      Gammaproteobacteria
+ 11.11	1	0	O	46449	        Enterobacterales
+ 11.11	1	0	F	46454	          Enterobacteriaceae
+ 11.11	1	1	G	46465	            Klebsiella

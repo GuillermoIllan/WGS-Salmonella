@@ -1,0 +1,32 @@
+100.00	46	1	R	1	root
+ 97.83	45	0	R1	131567	  cellular organisms
+ 97.83	45	0	D	2	    Bacteria
+ 95.65	44	0	P	1224	      Pseudomonadota
+ 95.65	44	0	C	1236	        Gammaproteobacteria
+ 95.65	44	0	O	91347	          Enterobacterales
+ 95.65	44	1	F	543	            Enterobacteriaceae
+ 91.30	42	0	G	590	              Salmonella
+ 91.30	42	6	S	28901	                Salmonella enterica
+ 54.35	25	0	S1	59202	                  Salmonella enterica subsp. salamae
+ 28.26	13	13	S2	2577858	                    Salmonella enterica subsp. salamae serovar 56:b:[1,5]
+ 19.57	9	9	S2	2577863	                    Salmonella enterica subsp. salamae serovar 56:z10:e,n,x
+  4.35	2	2	S2	2500152	                    Salmonella enterica subsp. salamae serovar 42:r:-
+  2.17	1	1	S2	1710356	                    Salmonella enterica subsp. salamae serovar 57:z29:z42
+ 23.91	11	2	S1	59201	                  Salmonella enterica subsp. enterica
+  6.52	3	3	S2	58101	                    Salmonella enterica subsp. enterica serovar Waycross
+  4.35	2	0	S2	1242078	                    Salmonella enterica subsp. enterica serovar Antsalova
+  4.35	2	2	S3	1242087	                      Salmonella enterica subsp. enterica serovar Antsalova str. S01-0511
+  4.35	2	0	S2	1242085	                    Salmonella enterica subsp. enterica serovar Macclesfield
+  4.35	2	2	S3	1242107	                      Salmonella enterica subsp. enterica serovar Macclesfield str. S-1643
+  2.17	1	0	S2	149539	                    Salmonella enterica subsp. enterica serovar Enteritidis
+  2.17	1	1	S3	1412562	                      Salmonella enterica subsp. enterica serovar Enteritidis str. EC20121747
+  2.17	1	1	S2	483687	                    Salmonella enterica subsp. enterica serovar Concord
+  2.17	1	0	G	561	              Escherichia
+  2.17	1	1	S	562	                Escherichia coli
+  2.17	1	0	D1	1783272	      Terrabacteria group
+  2.17	1	0	P	201174	        Actinomycetota
+  2.17	1	0	C	1760	          Actinomycetes
+  2.17	1	0	O	85007	            Mycobacteriales
+  2.17	1	0	F	1762	              Mycobacteriaceae
+  2.17	1	0	G	1763	                Mycobacterium
+  2.17	1	1	S	1789	                  Mycobacterium xenopi

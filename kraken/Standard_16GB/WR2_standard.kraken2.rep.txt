@@ -1,0 +1,36 @@
+100.00	30	2	R	1	root
+ 90.00	27	0	R1	131567	  cellular organisms
+ 90.00	27	0	D	2	    Bacteria
+ 86.67	26	0	P	1224	      Pseudomonadota
+ 86.67	26	0	C	1236	        Gammaproteobacteria
+ 86.67	26	2	O	91347	          Enterobacterales
+ 80.00	24	1	F	543	            Enterobacteriaceae
+ 70.00	21	4	G	590	              Salmonella
+ 56.67	17	2	S	28901	                Salmonella enterica
+ 50.00	15	0	S1	59201	                  Salmonella enterica subsp. enterica
+ 23.33	7	3	S2	149539	                    Salmonella enterica subsp. enterica serovar Enteritidis
+  3.33	1	1	S3	1412573	                      Salmonella enterica subsp. enterica serovar Enteritidis str. EC20122045
+  3.33	1	1	S3	1412507	                      Salmonella enterica subsp. enterica serovar Enteritidis str. SA20095309
+  3.33	1	1	S3	1412562	                      Salmonella enterica subsp. enterica serovar Enteritidis str. EC20121747
+  3.33	1	1	S3	1412618	                      Salmonella enterica subsp. enterica serovar Enteritidis str. EC20120929
+  6.67	2	2	S2	57743	                    Salmonella enterica subsp. enterica serovar Weltevreden
+  3.33	1	1	S2	53961	                    Salmonella enterica subsp. enterica serovar Abortusovis
+  3.33	1	1	S2	1160769	                    Salmonella enterica subsp. enterica serovar Worthington
+  3.33	1	0	S2	115981	                    Salmonella enterica subsp. enterica serovar Montevideo
+  3.33	1	1	S3	763921	                      Salmonella enterica subsp. enterica serovar Montevideo str. 42N
+  3.33	1	0	S2	1243577	                    Salmonella enterica subsp. enterica serovar Milwaukee
+  3.33	1	1	S3	1243578	                      Salmonella enterica subsp. enterica serovar Milwaukee str. SA19950795
+  3.33	1	0	S2	486994	                    Salmonella enterica subsp. enterica serovar Hvittingfoss
+  3.33	1	1	S3	1242097	                      Salmonella enterica subsp. enterica serovar Hvittingfoss str. SA20014981
+  3.33	1	1	S2	224727	                    Salmonella enterica subsp. enterica serovar Kottbus
+  6.67	2	0	G	561	              Escherichia
+  6.67	2	2	S	562	                Escherichia coli
+  3.33	1	0	D1	1783272	      Terrabacteria group
+  3.33	1	0	P	201174	        Actinomycetota
+  3.33	1	0	C	1760	          Actinomycetes
+  3.33	1	0	O	85007	            Mycobacteriales
+  3.33	1	0	F	1762	              Mycobacteriaceae
+  3.33	1	0	G	1763	                Mycobacterium
+  3.33	1	1	S	1789	                  Mycobacterium xenopi
+  3.33	1	0	R1	2787854	  other entries
+  3.33	1	1	R2	28384	    other sequences

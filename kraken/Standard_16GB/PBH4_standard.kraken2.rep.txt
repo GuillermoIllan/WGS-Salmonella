@@ -1,0 +1,52 @@
+100.00	95	2	R	1	root
+ 96.84	92	0	R1	131567	  cellular organisms
+ 96.84	92	0	D	2	    Bacteria
+ 95.79	91	0	P	1224	      Pseudomonadota
+ 95.79	91	0	C	1236	        Gammaproteobacteria
+ 51.58	49	0	O	91347	          Enterobacterales
+ 51.58	49	1	F	543	            Enterobacteriaceae
+ 47.37	45	0	G	590	              Salmonella
+ 47.37	45	7	S	28901	                Salmonella enterica
+ 26.32	25	0	S1	59202	                  Salmonella enterica subsp. salamae
+ 12.63	12	12	S2	2577858	                    Salmonella enterica subsp. salamae serovar 56:b:[1,5]
+  9.47	9	9	S2	2577863	                    Salmonella enterica subsp. salamae serovar 56:z10:e,n,x
+  2.11	2	2	S2	1710356	                    Salmonella enterica subsp. salamae serovar 57:z29:z42
+  2.11	2	2	S2	2500152	                    Salmonella enterica subsp. salamae serovar 42:r:-
+ 13.68	13	3	S1	59201	                  Salmonella enterica subsp. enterica
+  3.16	3	3	S2	58101	                    Salmonella enterica subsp. enterica serovar Waycross
+  2.11	2	0	S2	1242078	                    Salmonella enterica subsp. enterica serovar Antsalova
+  2.11	2	2	S3	1242087	                      Salmonella enterica subsp. enterica serovar Antsalova str. S01-0511
+  1.05	1	0	S2	149539	                    Salmonella enterica subsp. enterica serovar Enteritidis
+  1.05	1	1	S3	1412562	                      Salmonella enterica subsp. enterica serovar Enteritidis str. EC20121747
+  1.05	1	1	S2	1160736	                    Salmonella enterica subsp. enterica serovar Bispebjerg
+  1.05	1	1	S2	483687	                    Salmonella enterica subsp. enterica serovar Concord
+  1.05	1	0	S2	1242084	                    Salmonella enterica subsp. enterica serovar Krefeld
+  1.05	1	1	S3	1242106	                      Salmonella enterica subsp. enterica serovar Krefeld str. SA20030536
+  1.05	1	0	S2	1242085	                    Salmonella enterica subsp. enterica serovar Macclesfield
+  1.05	1	1	S3	1242107	                      Salmonella enterica subsp. enterica serovar Macclesfield str. S-1643
+  3.16	3	0	G	561	              Escherichia
+  3.16	3	3	S	562	                Escherichia coli
+ 44.21	42	0	O	72274	          Pseudomonadales
+ 44.21	42	0	F	135621	            Pseudomonadaceae
+ 44.21	42	3	G	286	              Pseudomonas
+ 41.05	39	0	G1	136841	                Pseudomonas aeruginosa group
+ 41.05	39	21	S	287	                  Pseudomonas aeruginosa
+  6.32	6	0	S1	208964	                    Pseudomonas aeruginosa PAO1
+  6.32	6	6	S2	1147787	                      Pseudomonas aeruginosa PAO1H2O
+  5.26	5	5	S1	798130	                    Pseudomonas aeruginosa 39016
+  1.05	1	1	S1	1352354	                    Pseudomonas aeruginosa PAO581
+  1.05	1	1	S1	1340851	                    Pseudomonas aeruginosa RP73
+  1.05	1	1	S1	1280938	                    Pseudomonas aeruginosa B136-33
+  1.05	1	1	S1	1093787	                    Pseudomonas aeruginosa DK2
+  1.05	1	1	S1	941193	                    Pseudomonas aeruginosa M18
+  1.05	1	1	S1	381754	                    Pseudomonas aeruginosa PA7
+  1.05	1	1	S1	1427342	                    Pseudomonas aeruginosa SCV20265
+  1.05	1	0	D1	1783272	      Terrabacteria group
+  1.05	1	0	P	201174	        Actinomycetota
+  1.05	1	0	C	1760	          Actinomycetes
+  1.05	1	0	O	85007	            Mycobacteriales
+  1.05	1	0	F	1762	              Mycobacteriaceae
+  1.05	1	0	G	1763	                Mycobacterium
+  1.05	1	1	S	1789	                  Mycobacterium xenopi
+  1.05	1	0	R1	2787854	  other entries
+  1.05	1	1	R2	28384	    other sequences

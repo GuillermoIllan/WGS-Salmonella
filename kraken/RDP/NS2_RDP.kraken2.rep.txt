@@ -1,0 +1,7 @@
+ 77.78	7	7	U	0	unclassified
+ 22.22	2	1	R	1	root
+ 11.11	1	0	D	3	  Bacteria
+ 11.11	1	0	P	36	    "Proteobacteria"
+ 11.11	1	0	C	175	      Deltaproteobacteria
+ 11.11	1	0	O	389	        Myxococcales
+ 11.11	1	1	O1	692	          unclassified_Myxococcales

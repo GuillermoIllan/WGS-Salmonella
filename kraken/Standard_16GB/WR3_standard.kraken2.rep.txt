@@ -1,0 +1,33 @@
+100.00	22	0	R	1	root
+100.00	22	0	R1	131567	  cellular organisms
+100.00	22	0	D	2	    Bacteria
+ 95.45	21	0	P	1224	      Pseudomonadota
+ 95.45	21	0	C	1236	        Gammaproteobacteria
+ 95.45	21	1	O	91347	          Enterobacterales
+ 90.91	20	1	F	543	            Enterobacteriaceae
+ 81.82	18	3	G	590	              Salmonella
+ 68.18	15	2	S	28901	                Salmonella enterica
+ 59.09	13	0	S1	59201	                  Salmonella enterica subsp. enterica
+ 27.27	6	2	S2	149539	                    Salmonella enterica subsp. enterica serovar Enteritidis
+  9.09	2	2	S3	1412562	                      Salmonella enterica subsp. enterica serovar Enteritidis str. EC20121747
+  4.55	1	1	S3	1412573	                      Salmonella enterica subsp. enterica serovar Enteritidis str. EC20122045
+  4.55	1	1	S3	1412618	                      Salmonella enterica subsp. enterica serovar Enteritidis str. EC20120929
+  4.55	1	1	S2	53961	                    Salmonella enterica subsp. enterica serovar Abortusovis
+  4.55	1	1	S2	1160769	                    Salmonella enterica subsp. enterica serovar Worthington
+  4.55	1	0	S2	115981	                    Salmonella enterica subsp. enterica serovar Montevideo
+  4.55	1	1	S3	763921	                      Salmonella enterica subsp. enterica serovar Montevideo str. 42N
+  4.55	1	0	S2	1243577	                    Salmonella enterica subsp. enterica serovar Milwaukee
+  4.55	1	1	S3	1243578	                      Salmonella enterica subsp. enterica serovar Milwaukee str. SA19950795
+  4.55	1	1	S2	57743	                    Salmonella enterica subsp. enterica serovar Weltevreden
+  4.55	1	0	S2	486994	                    Salmonella enterica subsp. enterica serovar Hvittingfoss
+  4.55	1	1	S3	1242097	                      Salmonella enterica subsp. enterica serovar Hvittingfoss str. SA20014981
+  4.55	1	1	S2	224727	                    Salmonella enterica subsp. enterica serovar Kottbus
+  4.55	1	0	G	561	              Escherichia
+  4.55	1	1	S	562	                Escherichia coli
+  4.55	1	0	D1	1783272	      Terrabacteria group
+  4.55	1	0	P	201174	        Actinomycetota
+  4.55	1	0	C	1760	          Actinomycetes
+  4.55	1	0	O	85007	            Mycobacteriales
+  4.55	1	0	F	1762	              Mycobacteriaceae
+  4.55	1	0	G	1763	                Mycobacterium
+  4.55	1	1	S	1789	                  Mycobacterium xenopi

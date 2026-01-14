@@ -1,0 +1,26 @@
+100.00	56	1	R	1	root
+ 96.43	54	0	R1	131567	  cellular organisms
+ 96.43	54	1	D	2	    Bacteria
+ 92.86	52	0	P	1224	      Pseudomonadota
+ 92.86	52	1	C	1236	        Gammaproteobacteria
+ 91.07	51	2	O	91347	          Enterobacterales
+ 87.50	49	13	F	543	            Enterobacteriaceae
+ 64.29	36	1	G	561	              Escherichia
+ 62.50	35	24	S	562	                Escherichia coli
+ 10.71	6	4	S1	83334	                  Escherichia coli O157:H7
+  3.57	2	2	S2	155864	                    Escherichia coli O157:H7 str. EDL933
+  1.79	1	0	S1	1446738	                  Escherichia coli O39:NM
+  1.79	1	1	S2	1446739	                    Escherichia coli O39:NM str. F8704-2
+  1.79	1	1	S1	585055	                  Escherichia coli 55989
+  1.79	1	1	S1	1392858	                  Escherichia coli M12
+  1.79	1	1	S1	199310	                  Escherichia coli CFT073
+  1.79	1	1	S1	1329907	                  Escherichia coli APEC IMT5155
+  1.79	1	0	D1	1783272	      Terrabacteria group
+  1.79	1	0	P	201174	        Actinomycetota
+  1.79	1	0	C	1760	          Actinomycetes
+  1.79	1	0	O	85007	            Mycobacteriales
+  1.79	1	0	F	1762	              Mycobacteriaceae
+  1.79	1	0	G	1763	                Mycobacterium
+  1.79	1	1	S	1789	                  Mycobacterium xenopi
+  1.79	1	0	R1	2787854	  other entries
+  1.79	1	1	R2	28384	    other sequences
